@@ -18,6 +18,7 @@
 #include <asm/arch/intel_soc_mrfld.h>
 #include <intel_scu_ipc.h>
 #include <u-boot/md5.h>
+#include <dm.h>
 
 DECLARE_GLOBAL_DATA_PTR;
 

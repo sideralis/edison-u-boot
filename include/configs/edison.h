@@ -36,10 +36,13 @@
 #define CONFIG_CMD_PORTIO
 #define CONFIG_CMD_READ
 #define CONFIG_CMD_REGINFO
-/*
- *#define CONFIG_CMD_I2C
- *#define CONFIG_SYS_I2C_SPEED    50000
- */
+
+#define CONFIG_CMD_I2C
+#define CONFIG_SYS_I2C
+#define CONFIG_SYS_I2C_SPEED    50000
+
+/*#define CONFIG_DM_I2C*/
+
 /*
  *#define CONFIG_CMD_SHA1SUM
  */
@@ -54,9 +57,8 @@
 /*
  *#define CONFIG_CMD_DATE
  */
-/*
- *#define CONFIG_CMD_GPIO
- */
+
+#define CONFIG_CMD_GPIO
 #define CONFIG_CMD_IRQ
 #define CONFIG_CMD_PCI
 /*
@@ -87,8 +89,8 @@
  */
 
 /*
- *#define DEBUG
- */
+ * #define DEBUG
+*/
 
 /*
  *#define CONFIG_PRE_CONSOLE_BUFFER

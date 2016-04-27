@@ -13,7 +13,7 @@
 #include <pci.h>
 #include <asm/pci.h>
 
-static struct pci_controller tangier_hose;
+/*static struct pci_controller tangier_hose;*/
 
 static void config_pci_bridge(struct pci_controller *hose, pci_dev_t dev,
 			      struct pci_config_table *table)
