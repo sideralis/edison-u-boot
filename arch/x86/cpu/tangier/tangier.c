@@ -234,3 +234,12 @@ void reset_cpu(ulong addr)
 {
 	intel_scu_ipc_simple_command(IPCMSG_COLD_RESET, 0);
 }
+
+static const struct edison_gpio_platdata edison_gpio[] = {
+	{0, "DIG", 1 },
+};
+
+U_BOOT_DEVICE(edison_gpio_dev) = {
+	.name = "edison_gpio_drv",
+	.platdata = &edison_gpio[0],
+};

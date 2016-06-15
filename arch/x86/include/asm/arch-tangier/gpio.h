@@ -10,4 +10,10 @@
 /* Where in config space is the register that points to the GPIO registers? */
 #define PCI_CFG_GPIOBASE 0x48
 
+struct edison_gpio_platdata {
+	int index;
+	char *name;
+	char count;
+};
+
 #endif /* _X86_ARCH_GPIO_H_ */
